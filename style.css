@@ -428,7 +428,67 @@ color: green !important;
       object-fit: cover;
       border-radius: 6px;
     }
+.counter-expanded {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: -100px; /* Start off-screen to the left */
+  bottom: 80px; /* Positioned just above the mobile sticky bar */
+  background-color: rgba(255, 255, 255, 0.9); /* White background with 90% opacity */
+  color: black; /* Change text color to black */
+  padding: 0px 11px; /* Decreased top and bottom padding by 1px */
+  border-radius: 25px;
+  font-size: 13px;
+  font-family: 'Arial', sans-serif;
+  z-index: 9999;
+  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.6); /* White glow effect */
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, left 0.5s ease-in-out; /* Smooth transition to slide in */
+  cursor: move; /* Set the cursor to indicate it's draggable */
+  text-shadow: 0 0 5px white; /* White glow on text */
+}
 
+/* Styles for the collapsed version (only shows icon and count) */
+.counter-collapsed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 0px; /* Align counter exactly with the left wall of the store */
+  bottom: 80px; /* Positioned just above the mobile sticky bar */
+  background-color: rgba(255, 255, 255, 0.9); /* White background with 90% opacity */
+  color: black; /* Change text color to black */
+  padding: 0px 10px; /* No padding on the left */
+  border-radius: 0 25px 25px 0; /* Only the right side remains rounded */
+  font-size: 12px;
+  font-family: 'Arial', sans-serif;
+  z-index: 9999;
+  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.6); /* White glow effect */
+  opacity: 1; /* No fading out completely */
+  transform: scale(0.7); /* Shrink but not disappear */
+  transition: all 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  cursor: move; /* Set the cursor to indicate it's draggable */
+  text-shadow: 0 0 5px white; /* White glow on text */
+}
+
+.counter-collapsed .visitor-text {
+  display: none;
+}
+
+.counter-collapsed i {
+  font-size: 20px;
+}
+
+/* Animation for collapsing (shrinks the counter but keeps it visible) */
+.counter-collapsing {
+  opacity: 1; /* Keep it visible */
+  transform: scale(0.7); /* Shrink it */
+}
+
+.counter-expanded {
+  opacity: 1; /* Keep it visible */
+  transform: scale(1); /* Full size */
+}
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }

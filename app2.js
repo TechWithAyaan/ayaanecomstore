@@ -40,3 +40,78 @@ Swal.fire({
       showFakePopup();
     }
   }, 11000);
+  // Example: Function to simulate live visitors count, replace with API integration
+function getLiveVisitorCount() {
+  return Math.floor(Math.random() * 100) + 1; // Replace this with your live visitor count logic
+}
+
+function updateVisitorCount() {
+  var liveCount = getLiveVisitorCount();
+  var initialCount = 20;
+  var updatedCount = initialCount + liveCount;
+  document.getElementById('live-visitor-count').innerText = updatedCount;
+}
+
+// Hide the visitor section after 5 seconds with animation (shrink only, do not disappear)
+setTimeout(function() {
+  var counter = document.getElementById('visitor-counter');
+  counter.classList.remove('counter-expanded');
+  counter.classList.add('counter-collapsing');
+  setTimeout(function() {
+    counter.classList.remove('counter-collapsing');
+    counter.classList.add('counter-collapsed');
+  }, 300); // Keep the collapsing animation for 300ms before showing the collapsed state
+}, 5000);
+
+// Toggle between expanded and collapsed view on click
+document.getElementById('visitor-counter').addEventListener('click', function() {
+  var counter = document.getElementById('visitor-counter');
+  if (counter.classList.contains('counter-collapsed')) {
+    counter.classList.remove('counter-collapsed');
+    counter.classList.add('counter-expanded');
+  } else {
+    counter.classList.remove('counter-expanded');
+    counter.classList.add('counter-collapsed');
+  }
+});
+
+// Initial update on page load
+window.onload = function() {
+  updateVisitorCount();
+  
+  // Slide in the counter from the left when the page loads
+  setTimeout(function() {
+    var counter = document.getElementById('visitor-counter');
+    counter.style.left = "0"; // Move the counter into view
+  }, 200); // 200ms delay to allow page load to complete first
+}
+
+// Update visitor count every 10 seconds (for demonstration)
+setInterval(updateVisitorCount, 10000);
+
+// Drag and drop functionality
+let isDragging = false;
+let offsetX, offsetY;
+
+const counterElement = document.getElementById('visitor-counter');
+
+counterElement.addEventListener('mousedown', function(e) {
+  isDragging = true;
+  offsetX = e.clientX - counterElement.getBoundingClientRect().left;
+  offsetY = e.clientY - counterElement.getBoundingClientRect().top;
+
+  // Change the cursor while dragging
+  counterElement.style.cursor = 'grabbing';
+});
+
+document.addEventListener('mousemove', function(e) {
+  if (isDragging) {
+    counterElement.style.left = (e.clientX - offsetX) + 'px';
+    counterElement.style.top = (e.clientY - offsetY) + 'px';
+  }
+});
+
+document.addEventListener('mouseup', function() {
+  isDragging = false;
+  counterElement.style.cursor = 'move'; // Reset the cursor to move when not dragging
+});
