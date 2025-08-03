@@ -1,0 +1,480 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.logo{
+    width: 200px;
+    margin-right: 20px;
+}
+.my-nav-list{
+font-size: 18px;
+font-weight: 500;
+}
+.tes{
+    margin: auto;
+}
+.cart{
+    list-style: none;
+    color: green;
+    gap: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+.arr{
+    font-size: 36px;
+    font-weight: 600;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-align:center ;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+.row{
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    @media  (max-width:991px) {
+        .searchbar{
+            width: 100%;
+        }
+    }
+    
+
+    /* fileingd */
+    /* From Uiverse.io by PriyanshuGupta28 */ 
+.stepper-box {
+  background-color: white;
+  border-radius: 12px;
+  padding: 32px;
+  width: 400px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.stepper-step {
+  display: flex;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.stepper-step:last-child {
+  margin-bottom: 0;
+}
+
+.stepper-line {
+  position: absolute;
+  left: 19px;
+  top: 40px;
+  bottom: -32px;
+  width: 2px;
+  background-color: #e2e8f0;
+  z-index: 1;
+}
+
+.stepper-step:last-child .stepper-line {
+  display: none;
+}
+
+.stepper-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+  z-index: 2;
+}
+
+.stepper-completed .stepper-circle {
+  background-color: #0f172a;
+  color: white;
+}
+
+.stepper-active .stepper-circle {
+  border: 2px solid #0f172a;
+  color: #0f172a;
+}
+
+.stepper-pending .stepper-circle {
+  border: 2px solid #e2e8f0;
+  color: #94a3b8;
+}
+
+.stepper-content {
+  flex: 1;
+}
+
+.stepper-title {
+    font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.stepper-completed .stepper-title {
+  color: #0f172a;
+}
+
+.stepper-active .stepper-title {
+  color: #0f172a;
+}
+
+.stepper-pending .stepper-title {
+  color: #94a3b8;
+}
+
+.stepper-status {
+  font-size: 13px;
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 12px;
+  margin-top: 4px;
+}
+
+.stepper-completed .stepper-status {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.stepper-active .stepper-status {
+  background-color: #dbeafe;
+  color: #1d4ed8;
+}
+
+.stepper-pending .stepper-status {
+  background-color: #f1f5f9;
+  color: #64748b;
+}
+
+.stepper-time {
+  font-size: 12px;
+  color: #94a3b8;
+  margin-top: 4px;
+}
+
+.stepper-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+
+.stepper-button {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+  background-color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.stepper-button-primary {
+  background-color: #0f172a;
+  color: white;
+  border-color: #0f172a;
+}
+/* From Uiverse.io by zanina-yassine */ 
+.modal {
+  width: fit-content;
+  height: fit-content;
+  background: #FFFFFF;
+  box-shadow: 0px 187px 75px rgba(0, 0, 0, 0.01), 0px 105px 63px rgba(0, 0, 0, 0.05), 0px 47px 47px rgba(0, 0, 0, 0.09), 0px 12px 26px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 26px;
+  max-width: 450px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.payment--options {
+  width: calc(100% - 40px);
+  display: grid;
+  grid-template-columns: 33% 34% 33%;
+  gap: 20px;
+  padding: 10px;
+}
+
+.payment--options button {
+  height: 55px;
+  background: #F2F2F2;
+  border-radius: 11px;
+  padding: 0;
+  border: 0;
+  outline: none;
+}
+
+.payment--options button svg {
+  height: 18px;
+}
+
+.payment--options button:last-child svg {
+  height: 22px;
+}
+
+.separator {
+  width: calc(100% - 20px);
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 10px;
+  color: #8B8E98;
+  margin: 0 10px;
+}
+
+.separator > p {
+  word-break: keep-all;
+  display: block;
+  text-align: center;
+  font-weight: 600;
+  font-size: 11px;
+  margin: auto;
+}
+
+.separator .line {
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  border: 0;
+  background-color: #e8e8e8;
+  margin: auto;
+}
+
+.credit-card-info--form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input_container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+  gap: 15px;
+}
+
+.split input {
+  width: 100%;
+}
+
+.input_label {
+  font-size: 10px;
+  color: #8B8E98;
+  font-weight: 600;
+}
+
+.input_field {
+  width: auto;
+  height: 40px;
+  padding: 0 0 0 16px;
+  border-radius: 9px;
+  outline: none;
+  background-color: #F2F2F2;
+  border: 1px solid #e5e5e500;
+  transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.input_field:focus {
+  border: 1px solid transparent;
+  box-shadow: 0px 0px 0px 2px #242424;
+  background-color: transparent;
+}
+
+.purchase--btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+  background: #F2F2F2;
+  border-radius: 11px;
+  border: 0;
+  outline: none;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 19px;
+  font-weight: 700;
+  background: linear-gradient(180deg, #363636 0%, #1B1B1B 50%, #000000 100%);
+  box-shadow: 0px 0px 0px 0px #FFFFFF, 0px 0px 0px 0px #000000;
+  transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.purchase--btn:hover {
+  box-shadow: 0px 0px 0px 2px #FFFFFF, 0px 0px 0px 4px #0000003a;
+}
+
+/* Reset input number styles */
+.input_field::-webkit-outer-spin-button,
+.input_field::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input_field[type=number] {
+  -moz-appearance: textfield;
+}   
+.fe-card{
+  margin: 30px;
+  width: 20%;
+  height: 180px;
+text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.fe-card:hover{
+  transition: 0.2s;
+  transform: scale(1.05);
+}
+.fe-img{
+  width: 20%;
+  margin-top: 20px;
+}
+
+.my-design{
+  margin-top: 20px;
+  width: 100%;
+ 
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.review{
+  gap: 20px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.rev-box{
+  border-radius: 10px;
+  padding: 10px;
+  width: 30%;
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+}
+.rev-box:hover{
+  box-shadow: 10px 10px 20px grey;
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+.rev-info{
+  display: flex;
+  justify-content: space-between;
+}
+.yel{
+  color: 	#FFD700;
+
+}
+/* 14 august text color start */
+.color14{
+color: green !important;
+
+}
+.bg-aug{
+  background-color: green !important;
+}
+.white14{
+  color: white !important;
+}
+.ani{
+  animation: weig 2s infinite;
+}
+@keyframes weig {
+  to{
+    text-decoration: underline;
+    font-weight: bold;
+    
+  }
+  
+}
+@media (max-width:807px){
+.fe-card{
+  width: 50%;
+}
+}
+@media only screen and (max-width:1050px) {
+  .review{
+  gap: 20px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.rev-box{
+  border-radius: 10px;
+  padding: 10px;
+  width: 40%;
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+}
+.rev-box:hover{
+  box-shadow: 10px 10px 20px grey;
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+.rev-info{
+  display: flex;
+  justify-content: space-between;
+}
+.yel{
+  color: 	#FFD700;
+
+}
+}
+@media only screen and (max-width:768px) {
+  .review{
+  gap: 20px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.rev-box{
+  border-radius: 10px;
+  padding: 10px;
+  width: 95%;
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+}
+.rev-box:hover{
+  box-shadow: 10px 10px 20px grey;
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+.rev-info{
+  display: flex;
+  justify-content: space-between;
+}
+.yel{
+  color: 	#FFD700;
+
+}
+}
