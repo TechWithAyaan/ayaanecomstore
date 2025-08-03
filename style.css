@@ -387,6 +387,22 @@ text-align: center;
   color: 	#FFD700;
 
 }
+.top-discount{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 6vh;
+  /* background-color: green; */
+  /* color: white; */
+  background: linear-gradient(90deg, white, green);
+  font-weight: 500;
+}
+.navbar{
+  z-index: 4;
+}
 /* 14 august text color start */
 .color14{
 color: green !important;
