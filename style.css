@@ -358,6 +358,8 @@ text-align: center;
   flex-wrap: wrap;
 }
 .review{
+  overflow-x: scroll;
+  overflow-y: hidden;
   gap: 20px;
   width: 100%;
   height: auto;
@@ -365,6 +367,11 @@ text-align: center;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+padding: 30px;
+}
+.anchor-pageing{
+  color: black;
+  text-decoration: none;
 }
 .rev-box{
   border-radius: 10px;
@@ -392,16 +399,20 @@ text-align: center;
   justify-content: center;
   align-items: center;
   position: fixed;
-  z-index: 1;
+  z-index: 1000;
   width: 100%;
   height: 6vh;
-  /* background-color: green; */
-  /* color: white; */
-  background: linear-gradient(90deg, white, green);
+  /* this color is only for 14 august pakistan day start  */
+  
+  /* background: linear-gradient(90deg, white, green); */
+
+  /* this color is only for 14 august pakistan day End  */
+  background-color: red;
+  color: black;
   font-weight: 500;
 }
 .navbar{
-  z-index: 4;
+  z-index: 1200;
 }
 /* 14 august text color start */
 .color14{
@@ -505,6 +516,114 @@ color: green !important;
   opacity: 1; /* Keep it visible */
   transform: scale(1); /* Full size */
 }
+.stari{
+  display: flex;
+  justify-content: space-between;
+}
+.product-main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(155, 152, 152, 0.854);
+}
+.product-box{
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  width: 70%;
+  height: 80%;
+  background-color: white;
+}
+.pro-left{
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  align-items: center;
+width: 50%;
+height: 100%;
+}
+  .back{
+    /* margin: 30px; */
+    position: absolute;
+    left: 39px;
+    font-size: 30px;
+    color: black;
+  }
+  .back:hover{
+     position: absolute;
+    left: 35px;
+    cursor: pointer;
+    font-size: 30px;
+  }
+.pro-left-img{
+  position: relative;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+}
+.pro-right{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+.product-title{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.desp-tit{
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 5px;
+}
+.desp{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  margin-top: 5px;
+}
+.quick-btn{
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.qui-buy{
+  padding: 6px;
+  font-size: 18px;
+  background-color: #2ABBE8;
+  color: white;
+  border: none;
+  width: 47%;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.qui-buy:hover{
+  transition: 0.2s;
+  transform: scale(1.05);
+}
+.clr-change{
+  background-color: #F57224;
+}
+.qty{
+  margin-top: 20px;
+  font-size: 20px;
+}
+.arial{
+font-family: Arial, Helvetica, sans-serif;
+}
+.qt-box{
+  margin-top: 10px;
+  width: 100%;
+  padding: 6px;
+  font-weight: bold;
+}
+.show{
+  display: none;
+}
+.showa{
+  display: none;
+}
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
@@ -584,5 +703,80 @@ color: green !important;
 .yel{
   color: 	#FFD700;
 
+}
+}
+@media only screen and (max-width:1000px) {
+
+ .product-box{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius: 20px;
+  width: 70%;
+  height: 100%;
+  background-color: white;
+} 
+.pro-left{
+  width: 100%;
+}
+.pro-right{
+  width: 100%;
+}
+.product-main{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(155, 152, 152, 0.854);
+  /* background-color: white; */
+}
+.show{
+  display: inline;
+  cursor: pointer;
+  color: grey;
+  text-decoration: underline;
+}
+.showa{
+  display: none;
+    cursor: pointer;
+  color: grey;
+  text-decoration: underline;
+}
+}
+@media only screen and (max-width:452px){
+   .product-box{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+} 
+}
+@media only screen and (max-width:330px){
+ .qui-buy{
+  padding: 6px;
+  font-size: 18px;
+  background-color: #2ABBE8;
+  color: white;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.quick-btn{
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  padding: 0px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+} 
+.clr-change{
+  margin-top: 10px;
+  background-color: #F57224;
 }
 }

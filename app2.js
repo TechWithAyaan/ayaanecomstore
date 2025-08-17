@@ -1,11 +1,21 @@
 
-Swal.fire({
-  position: "top-end",
-  icon: "success",
-  title: "Independence Day Sale is Live!",
-  showConfirmButton: false,
-  timer: 2500
-});
+// Swal.fire({
+//   position: "top-end",
+//   icon: "success",
+//   title: "Independence Day Sale is Live!",
+//   showConfirmButton: false,
+//   timer: 2500
+// });
+function showi() {
+ document.getElementsByClassName("text")[0].style.display = "inline";
+ document.getElementsByClassName("show")[0].style.display ="none";
+ document.getElementsByClassName("showa")[0].style.display ="inline";
+}
+function ll() {
+ document.getElementsByClassName("text")[0].style.display = "none";
+  document.getElementsByClassName("show")[0].style.display ="inline";
+  document.getElementsByClassName("showa")[0].style.display ="none";
+}
   const popup = document.getElementById('sale-popup');
   const popupText = popup.querySelector('.popup-text');
   const popupImg = popup.querySelector('img');
