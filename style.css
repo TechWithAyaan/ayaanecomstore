@@ -636,6 +636,7 @@ font-family: Arial, Helvetica, sans-serif;
 .quick-img{
   width: 100%;
   height: 100%;
+
 }
 .quick-left{
   width: 50%;
@@ -645,6 +646,14 @@ font-family: Arial, Helvetica, sans-serif;
   padding: 30px;
   margin-left: 20px;
   width: 40%;
+}
+.quick-back{
+  top: 20px;
+  left: 10px;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  position: absolute;
 }
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
@@ -659,6 +668,15 @@ font-family: Arial, Helvetica, sans-serif;
   
 }
 @media (max-width:807px){
+  .quick-view-product{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  /* justify-content: center; */
+  width: 100%;
+  height: 100%;
+  /* border: 3px solid; */
+}
   .quick-left{
   width: 100%;
   height: 50%;
@@ -777,6 +795,9 @@ font-family: Arial, Helvetica, sans-serif;
 }
 }
 @media only screen and (max-width:452px){
+  .quick-back{
+    top: 5px;
+  }
   .tittle-tittle{
     font-size: 16px;
   }
