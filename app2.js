@@ -19,6 +19,14 @@ num--
 document.getElementsByClassName("count")[0].innerHTML = num
 }
 }
+
+function pr(){
+  let buy = prompt("Enter Your Buying Price")
+ let sell = prompt("Enter Your Selling Price")
+//  let extra= prompt("Enter Your Extra Charges like flyer box....")
+ let profit = sell -buy ;
+ alert("Your Profit is "+profit+" PKR")
+}
 function showi() {
  document.getElementsByClassName("text")[0].style.display = "inline";
  document.getElementsByClassName("show")[0].style.display ="none";
