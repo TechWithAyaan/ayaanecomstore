@@ -624,6 +624,28 @@ font-family: Arial, Helvetica, sans-serif;
 .showa{
   display: none;
 }
+.quick-view-product{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  /* justify-content: center; */
+  width: 100%;
+  height: 100vh;
+  /* border: 3px solid; */
+}
+.quick-img{
+  width: 100%;
+  height: 100%;
+}
+.quick-left{
+  width: 50%;
+  height: 100%;
+}
+.quick-right{
+  padding: 30px;
+  margin-left: 20px;
+  width: 40%;
+}
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
@@ -637,6 +659,15 @@ font-family: Arial, Helvetica, sans-serif;
   
 }
 @media (max-width:807px){
+  .quick-left{
+  width: 100%;
+  height: 50%;
+}
+.quick-right{
+  padding: 30px;
+  margin-left: 20px;
+  width: 100%;
+}
 .fe-card{
   width: 50%;
 }
@@ -746,6 +777,21 @@ font-family: Arial, Helvetica, sans-serif;
 }
 }
 @media only screen and (max-width:452px){
+  .tittle-tittle{
+    font-size: 16px;
+  }
+  .D-W-M{
+    font-size: 26px;
+  }
+  .quick-left{
+  width: 100%;
+  height: 50%;
+}
+.quick-right{
+  padding: 30px;
+  margin-left: 20px;
+  width: 100%;
+}
    .product-box{
   display: flex;
   flex-wrap: wrap;
@@ -779,4 +825,9 @@ font-family: Arial, Helvetica, sans-serif;
   margin-top: 10px;
   background-color: #F57224;
 }
+}
+@media only screen and (max-width:260px){
+  .D-W-M{
+    font-size: 18px;
+  }
 }
