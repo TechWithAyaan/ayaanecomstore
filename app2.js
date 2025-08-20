@@ -6,6 +6,19 @@
 //   showConfirmButton: false,
 //   timer: 2500
 // });
+let num = 0;
+function plus(){
+for (let i =0;i<1;i++){
+num++
+document.getElementsByClassName("count")[0].innerHTML = num
+}
+}
+function min(){
+for (let i =0;i<1;i++){
+num--
+document.getElementsByClassName("count")[0].innerHTML = num
+}
+}
 function showi() {
  document.getElementsByClassName("text")[0].style.display = "inline";
  document.getElementsByClassName("show")[0].style.display ="none";
