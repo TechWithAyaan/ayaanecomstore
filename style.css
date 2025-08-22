@@ -834,8 +834,15 @@
   padding: 20px;
   height:200px;
   background-color: white;
-  box-shadow: 30px 10px 20px;
+  /* box-shadow: 20px 10px 60px; */
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 20px;
   
+}
+.progess-1:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+  transition: 0.2s;
 }
 .com-icon{
   width: 100%;
@@ -846,6 +853,7 @@
   align-items: center;
   border-radius: 50%;
   width: 100px;
+  padding: 10px;
   height: 100px;
   background-color: red;
 }
@@ -853,7 +861,10 @@
   display: flex;
   flex-wrap: nowrap;
   width: 100%;
-  height: 100%;
+  height: 100vh;
+}
+.progess-text{
+  margin-left: 20px;
 }
 @keyframes fadeIn {
   from {
