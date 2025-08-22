@@ -703,7 +703,70 @@ font-family: Arial, Helvetica, sans-serif;
   color: white;
   
 }
-
+.sell-logo{
+  width: 50%;
+}
+.main-sell{
+  width: 100%;
+ height: 100vh;
+ background-color: #F2F4F7; 
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.sell-text{
+  padding: 20px;
+  width: 50%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.sell-form{
+  width: 50%;
+  padding: 20px;
+}
+.become{
+  font-size: 50px;
+}
+.logo-name{
+  font-size: 30px;
+  color: rgb(147, 145, 145);
+}
+.s-w{
+  color: green;
+}
+.sell-login-form{
+  padding: 30px;
+  width: 70%;
+  border-radius: 20px;
+  background-color: white;
+height: 100%;
+box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.or-same{
+  margin-top: 10px;
+  border-radius: 6px;
+  width: 100%;
+  padding: 10px;
+  font-weight: 600;
+}
+.sell-sumbit{
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0, 128, 0, 0.865);
+  color: white;
+  margin-top: 10px;
+  border-radius: 20px;
+  font-size: 25px;
+  border: none;
+  cursor: pointer;
+}
+.sell-sumbit:hover{
+  transform: scale(1.03);
+  transition: 0.2s;
+  background-color: rgba(0, 128, 0, 0.874);
+}
+.sell-sumbit:active{
+  background-color: green;
+}
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
