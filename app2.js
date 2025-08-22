@@ -6,6 +6,19 @@
 //   showConfirmButton: false,
 //   timer: 2500
 // });
+function sidebaropen(){
+  document.getElementsByClassName("side-bar-open-icon")[0].style.display ="none"
+  document.getElementsByClassName("close")[0].style.display ="block"
+  document.getElementsByClassName("sidebar")[0].style.display ="block"
+  document.getElementsByClassName("main-progess")[0].style.display ="none"
+}
+function sidebarclose(){
+  document.getElementsByClassName("side-bar-open-icon")[0].style.display ="block"
+  document.getElementsByClassName("close")[0].style.display ="none"
+  document.getElementsByClassName("sidebar")[0].style.display ="none"
+   document.getElementsByClassName("main-progess")[0].style.display ="flex"
+}
+
 let num = 0;
 function plus(){
 for (let i =0;i<1;i++){
