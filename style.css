@@ -705,13 +705,7 @@
   display: flex;
   justify-content: space-between;
 }
-.p-c {
-  width: 50%;
-  border-radius: 50px;
-  font-weight: 600;
-  background-color: #2abbe8;
-  color: white;
-}
+
 .sell-logo {
   width: 50%;
 }
@@ -867,6 +861,64 @@
 }
 .progess-text{
   margin-left: 20px;
+}
+.product-row-text-list{
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+.product-row-text-list{
+  background-color: rgb(186, 184, 184);
+  /* background-color: red; */
+}
+.bold{
+  font-weight: bold;
+}
+.add-pt-btn{
+  background-color: orange;
+  color: white;
+  font-size: 20px;
+  border-radius: 20px;
+  width: 200px;
+  margin: 10px;
+}
+.just-div{
+  display: flex;
+  align-items: center;
+}
+.just-btn-div{
+  display: flex;
+}
+.just-div-child{
+  margin: 20px;
+  cursor: pointer;
+  
+}
+.row-product{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.extra-size{
+  font-size: 18px;
+}
+.abc{
+  background-color: red !important;
+}
+.product-row-text-list-2{
+  background-color: white;
+}
+.rounded{
+  height: 40px;
+  display: flex;
+  justify-content: center;
+ align-items: center;
+  background-color: #7CE87C;
+}
+.pending-round{
+  background-color: #F76F72;
 }
 @keyframes fadeIn {
   from {
@@ -1169,14 +1221,7 @@
   .ppp {
     font-size: 20px;
   }
-  .p-c {
-    width: 60%;
-    border-radius: 20px;
-    font-weight: 600;
-    font-size: 16px;
-    background-color: #2abbe8;
-    color: white;
-  }
+
   .quick-back {
     top: 5px;
   }

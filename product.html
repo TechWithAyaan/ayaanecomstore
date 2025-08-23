@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+      <style>
+      body{
+        background-color: #F2F4F7;
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+</head>
+<body>
+    <header class="dashboard-header">
+      <div class="dash-rela">
+<i class="fa-solid fa-bars side-bar-open-icon same-buddy" onclick="sidebaropen()"></i>
+<i class="fa-solid fa-xmark close same-buddy" onclick="sidebarclose()" style="display: none;"></i>
+</div>
+
+<img src="img/Logo.png" alt="" class="dahsboard-header-logo">
+
+      <form class="d-flex jus" role="search">
+        <input class="form-control me-2 searchbar" type="search" placeholder="Search" aria-label="Search" list="item"/>
+        <datalist id="item">
+          <option value="My Products"></option>
+          <option value="Delivered"></option>
+          <option value="Non Ship"></option>
+          <option value="Ship Parcel"></option>
+          <option value="Helpline"></option>
+          <option value="Calculator"></option>
+        
+        </datalist>
+        <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
+    </header>
+ 
+          <aside class="sidebar">
+      <h1 class="sidebar-heading">Dashboard</h1>
+      <h3 class="sidebar-opt"><a href="sellerdashboard.html" class="sidebar-opt">Overview</a></h2>
+      <hr>
+      <h3 class="sidebar-opt"><a href="product.html" class="sidebar-opt side-active">Product</a></h2>
+      <hr>
+      
+                  
+    </aside>
+    
+    <div class="product-tititle-row">
+        <ul class="product-row-text-list bold"> 
+            <div class="just-div"> 
+            <li class="bold just-div-child">Product Image</li>
+            <li class="bold just-div-child">Product Name</li>
+            <li class="bold just-div-child">Product Price</li>
+            <li class="bold just-div-child">Status</li>
+            </div>
+            <!-- <div class="just-btn-div">
+            <li><a href="#"><button class="add-pt-btn">Add Product</button></a></li>
+            <li><button class="p-c add-pt-btn"onclick="pr()">Profit Calculator %</button></li>
+            </div> -->
+            
+        </ul>
+    </div>
+    <div class="product-tititle-row-2 abc">
+        <ul class="product-row-text-list product-row-text-list-2  bold"> 
+            <div class="just-div"> 
+            <li class="bold just-div-child extra-size"><a href="img/p1.webp"><img src="img/p1.webp" alt="" class="row-product"></a></li>
+            <li class="bold just-div-child extra-size">Washing Machine</li>
+            <li class="bold just-div-child extra-size">60,349</li>
+            <div class="rounded">
+            <li class="bold just-div-child extra-size">Active</li>
+            </div>
+            </div>
+          
+            
+        </ul>
+    </div>
+    <div class="product-tititle-row-2 abc">
+        <ul class="product-row-text-list product-row-text-list-2 bold"> 
+            <div class="just-div"> 
+            <li class="bold just-div-child extra-size"><a href="img/p1.webp"><img src="img/p1.1.webp" alt="" class="row-product"></a></li>
+            <li class="bold just-div-child extra-size">Shan Dawat Malsa</li>
+            <li class="bold just-div-child extra-size">200</li>
+               <div class="rounded pending-round">
+            <li class="bold just-div-child extra-size">Pending</li>
+            </div>
+            </div>
+          
+            
+        </ul>
+    </div>
+    <div class="product-tititle-row-2 abc">
+        <ul class="product-row-text-list product-row-text-list-2 bold"> 
+            <div class="just-div"> 
+            <li class="bold just-div-child extra-size"><a href="img/p1.webp"><img src="img/p3.webp" alt="" class="row-product"></a></li>
+            <li class="bold just-div-child extra-size">Shan Dawat Malsa</li>
+            <li class="bold just-div-child extra-size">200</li>
+               <div class="rounded">
+            <li class="bold just-div-child extra-size">Active</li>
+            </div>
+            </div>
+          
+            
+        </ul>
+    </div>
+  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+<script src="app2.js"></script>
+  </body>
+</html>
