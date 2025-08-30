@@ -916,9 +916,12 @@
   justify-content: center;
  align-items: center;
   background-color: #7CE87C;
+  color: green;
 }
 .pending-round{
   background-color: #F76F72;
+  /* color: rgb(252, 59, 59); */
+  color: #990000;
 }
 @keyframes fadeIn {
   from {
@@ -940,7 +943,7 @@
   .product-row-text-list{
   list-style: none;
   display: flex;
-  gap: 30px;
+  gap: 10px;
   align-items: center;
   justify-content: space-between;
 }
@@ -976,6 +979,7 @@
   width: 100px;
   height: 100px;
   border-radius: 50%;
+  
 }
 .extra-size{
   font-size: 10px !important;
@@ -987,7 +991,7 @@
   background-color: white;
 }
 .rounded{
-  height: 10px;
+  height: 100%;
   display: flex;
   justify-content: center;
  align-items: center;
